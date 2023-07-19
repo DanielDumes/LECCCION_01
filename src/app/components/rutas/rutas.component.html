@@ -1,0 +1,21 @@
+
+
+  <h1>RUTAS
+    <small> </small></h1>
+<hr>
+<div class="col animated fadeIn fast" ></div>
+    <div class="card mb-3 " style="max-width: 540px; ">
+       
+            <div class="col-md-4 ">    
+            </div>
+            <div class="col-md-8 ">
+                <div class="card-body ">
+                    <div *ngFor="let ruta of rutas">
+                        <h5 class="card-title">{{ ruta.ciuor }} - {{ ruta.ciudest }}</h5>
+                        <p class="card-text">{{ ruta.desc }}</p>
+                        <p class="card-text"><small class="text-muted">Precio: {{ ruta.precio }} | Tipo: {{ ruta.tipo }}</small></p>
+                        <button (click)="verRuta" type="button" class=btn btn-primary> Ver más</button>
+                      </div>
+                </div>
+            </div>
+        </div>
